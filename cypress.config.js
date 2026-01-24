@@ -1,12 +1,18 @@
+require("dotenv").config();
+
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://example.com",
     fixturesFolder: "cypress/fixtures",
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
     supportFile: "cypress/support/e2e.js",
-    setupNodeEvents(on, config) {},
+    setupNodeEvents(on, config) {
+      config.env.LOGIN_USERNAME = process.env.CYPRESS_LOGIN_USERNAME;
+      config.env.LOGIN_PASSWORD = process.env.CYPRESS_LOGIN_PASSWORD;
+
+      return config;
+    },
   },
 
   defaultCommandTimeout: 5000,
