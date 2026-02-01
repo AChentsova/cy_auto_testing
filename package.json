@@ -8,7 +8,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:queries-test": "cypress run --browser chrome --spec cypress/e2e/cypress_queries_test.cy.js"
+    "cypress:run:queries-test": "cypress run --browser chrome --spec cypress/e2e/cypress_queries_test.cy.js",
+    "cypress:run:registration-test": "cypress run --browser chrome --spec cypress/e2e/cypress_registration_test.cy.js"
   },
   "repository": {
     "type": "git",
