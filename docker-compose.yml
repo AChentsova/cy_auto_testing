@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  cypress:
+    build: .
+    working_dir: /e2e
+    volumes:
+      - .:/e2e
+    env_file:
+      - .env
