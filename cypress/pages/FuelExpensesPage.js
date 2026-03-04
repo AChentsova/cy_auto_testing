@@ -1,4 +1,8 @@
 class ExpensesPage {
+
+  openExpensesPage() {
+    cy.contains("Fuel expenses").click();
+  }
   clickAddFuel() {
     cy.contains("Add fuel expense").click();
   }
@@ -25,5 +29,4 @@ class ExpensesPage {
     });
   }
 }
-
 export default new ExpensesPage();
