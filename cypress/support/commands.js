@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 Cypress.Commands.add("login", (email, password) => {
-  cy.visit("https://qauto.forstudy.space", {
+  cy.visit("/", {
     auth: {
       username: Cypress.env("LOGIN_USERNAME"),
       password: Cypress.env("LOGIN_PASSWORD"),

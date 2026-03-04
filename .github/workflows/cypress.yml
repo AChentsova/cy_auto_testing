@@ -23,3 +23,4 @@ jobs:
         env:
           CYPRESS_LOGIN_USERNAME: ${{ secrets.CYPRESS_LOGIN_USERNAME }}
           CYPRESS_LOGIN_PASSWORD: ${{ secrets.CYPRESS_LOGIN_PASSWORD }}
+          CYPRESS_QAUTO_BASE_URL: ${{ secrets.CYPRESS_QAUTO_BASE_URL }}

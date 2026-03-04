@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "test:qauto": "cypress run --config-file cypress.config.qauto.js",
+    "test:qauto2": "cypress run --config-file cypress.config.qauto2.js",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:queries-test": "cypress run --browser chrome --spec cypress/e2e/cypress_queries_test.cy.js",
     "cypress:run:registration-test": "cypress run --browser chrome --spec cypress/e2e/cypress_registration_test.cy.js"
@@ -26,6 +28,9 @@
   "devDependencies": {
     "cypress": "^15.8.2",
     "cypress-xpath": "^2.0.1",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
